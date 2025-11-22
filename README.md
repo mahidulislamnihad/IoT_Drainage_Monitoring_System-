@@ -1,8 +1,6 @@
 # IoT_Drainage_Monitoring_System-
-# ESP32 Smart Drainage Monitoring System
 
-This project monitors drain water levels, rain intensity, gas buildup, and flow rate using an ESP32 and sends real-time data to Blynk. Servo-driven gates automatically open/close based on overflow conditions.
-
+This is a academic project that monitors drain water levels, rain intensity, gas buildup, and flow rate in drain while raining using an ESP32 and sends real-time data to Blynk. Servo-driven gates automatically open/close based on overflow conditions. Main aim of the project was to provide a IoT based smart drain monitoring solution powered by web dashborad blynk for drain maintenance.
 ## Prototype Hardware
 <img src="Prototype/project_prototype.jpg" width="350">
 
