@@ -1,21 +1,42 @@
-# IoT_Drainage_Monitoring_System-
+# ESP32 Drain Maintenance & Flow Monitoring System
 
-This is a academic project that monitors drain water levels, rain intensity, gas buildup, and flow rate in drain while raining using an ESP32 and sends real-time data to Blynk. Servo-driven gates automatically open/close based on overflow conditions. Main aim of the project was to provide a IoT based smart drain monitoring solution powered by web dashborad blynk for drain maintenance.
-## Prototype Hardware
+This project implements a real-time drain monitoring system using an ESP32.  
+It measures flow rate from a Hall-effect flow sensor, tracks drainage conditions,
+and publishes sensor data using MQTT for downstream analytics and automation.
+
+The repository includes two firmware variants:
+1. **Standard Arduino loop-based implementation**
+2. **Modular FreeRTOS implementation** with dedicated system tasks
+
+
+## 📸 Prototype Hardware
+
 <img src="Prototype/project_prototype.jpg" width="350">
 
-## Features
-- Drain 1/2/3 water level monitoring
-- Gas sensor monitoring for clog detection
-- Rain sensor integration
-- Flow sensor real-time measurement
-- Servo-based gate automation
-- Alerts through Blynk (overflow, low flow, gas levels)
+---
 
-## Code Included
-- `code/drain_maintenance_system_firmware.ino` (working non-FreeRTOS version)
+## 🚀 Features
+
+- Clean separation of logic (FreeRTOS tasks, modular `.cpp/.h`)  
+- Expandable sensor architecture for future water-level,water flow or gas sensor modules  
+- Designed for low-power IoT environments  
+- Allows benchmarking of:
+  
+
+---
+
+## 📁 Firmware Versions
+
+- **Standard Arduino Version:**  
+  [drain_maintenance_system_firmware.ino](code/drain_maintenance_system_firmware.ino)
+
+- **FreeRTOS Version:**  
+  [main.ino](code/FreeRTOS_Version/main.ino)
+
+- **FreeRTOS Task Files:**  
+  - [system_tasks.cpp](code/FreeRTOS_Version/system_tasks.cpp)  
+  - [system_tasks.h](code/FreeRTOS_Version/system_tasks.h)
 
 ## Next Steps
-- Implement FreeRTOS version
 - Add database logging
 - Add OTA updates
