@@ -9,7 +9,7 @@ The repository includes two firmware variants:
 2. **Modular FreeRTOS implementation** with dedicated system tasks
 
 
-## 📸 Prototype Hardware
+##  Prototype Hardware
 
 <img src="Prototype/project_prototype.jpg" width="350">
 
@@ -25,7 +25,7 @@ The repository includes two firmware variants:
 
 ---
 
-## 📁 Firmware Versions
+## Firmware Versions
 
 - **Standard Arduino Version:**  
   [drain_maintenance_system_firmware.ino](code/drain_maintenance_system_firmware.ino)
