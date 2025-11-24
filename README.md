@@ -15,7 +15,7 @@ The repository includes two firmware variants:
 
 ---
 
-## 🚀 Features
+## Features
 
 - Clean separation of logic (FreeRTOS tasks, modular `.cpp/.h`)  
 - Expandable sensor architecture for future water-level,water flow or gas sensor modules  
