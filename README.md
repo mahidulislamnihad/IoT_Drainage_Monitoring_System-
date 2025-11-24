@@ -33,9 +33,7 @@ The repository includes two firmware variants:
 - **FreeRTOS Version:**  
   [main.ino](code/FreeRTOS_Version/main.ino)
 
-- **FreeRTOS Task Files:**  
-  - [system_tasks.cpp](code/FreeRTOS_Version/system_tasks.cpp)  
-  - [system_tasks.h](code/FreeRTOS_Version/system_tasks.h)
+
 
 ## Next Steps
 - Add database logging
